@@ -1,0 +1,67 @@
+<style>
+    /* Estilos para el contenedor de la animación */
+    .animation-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    /* Estilos para el elemento que se animará */
+    .animated-element {
+      width: 100px;
+      height: 100px;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      transition: all 0.5s;
+    }
+    
+    /* Estilos para el estado :hover del elemento que se animará */
+    .animated-element:hover {
+      transform: scale(1.5);
+    }
+    
+    /* Estilos para la animación de entrada */
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+    
+    /* Estilos para aplicar la animación de entrada */
+    .slideIn {
+      animation: slideIn 0.5s ease-out;
+    }
+    
+    /* Estilos para la animación de salida */
+    @keyframes slideOut {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+    
+    /* Estilos para aplicar la animación de salida */
+    .slideOut {
+      animation: slideOut 0.5s ease-out;
+    }
+  </style>
+
+  <!-- Contenedor de la animación -->
+  <div class="animation-container">
+    <!-- Elemento que se animará -->
+    <div class="animated-element slideIn">Hola</div>
+  </div>
+
+  <!-- Botón para aplicar la animación de salida -->
+  <button type="button" onclick="document.querySelector('.animated-element').classList.add('slideOut')">Salir</button>
+  

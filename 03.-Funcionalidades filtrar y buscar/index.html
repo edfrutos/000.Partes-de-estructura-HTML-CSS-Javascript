@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Aprende HTML, CSS y JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Otros elementos head aquí -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/themes/prism.min.css" >
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/prism.min.js"></script>
+  </head>
+  <body>
+    <script>
+        Prism.highlightAll();
+      </script>
+
+    <header>
+      <h1>Aprende HTML, CSS y JavaScript</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#manuales">Manuales</a></li>
+        <li><a href="#tutoriales">Tutoriales</a></li>
+      </ul>
+    </nav>
+    <main>
+        <section id="filtro-seccion">
+          <h2>Filtrar por:</h2>
+          <select id="filtro">
+            <option value="todos">Todos</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+          </select>
+          <button type="button" id="boton-filtro">Filtrar</button>
+        </section>
+        <section id="busqueda-seccion">
+          <h2>Buscar:</h2>
+          <form id="form-busqueda">
+            <input type="text" id="busqueda" placeholder="Ingresar término a buscar">
+            <button type="submit">Buscar</button>
+          </form>
+        </section>
+        <section id="contenido-html" class="blue-section">
+          <h2>Cursos y manuales de HTML</h2>
+          <div class="contenido-seccion html">
+            <!-- Aquí se incluirán los cursos y manuales de HTML disponibles -->
+          </div>
+        </section>
+        <section id="contenido-css">
+          <h2>Cursos y manuales de CSS</h2>
+          <div class="code-header">
+            <svg class="code-header__icon">
+              <!-- Código SVG aquí -->
+            </svg>
+            <button type="button" class="code-header__button">Copiar código</button>
+          </div>
+          <div class="container">
+            <div class="code-window">
+                <div class="code-window">
+                    <div class="header">
+                      <svg viewBox="0 0 20 20">
+                        <!-- Contenido del icono aquí -->
+                      </svg>
+                      <button type="button" class="code-header__button">Copiar código</button>
+
+                    </div>
+                    <!-- Contenido de la ventana de fragmento de código aquí -->
+                    <pre>
+                        <code class="language-html">
+                            <script>
+                                <html></html>
+                            </script>
+                          // Código sin formato aquí
+                        </code>
+                      </pre>
+                  </div>
+
+              <!-- Contenido de la ventana de fragmento de código aquí -->
+
+            </div>
+          </div>
+        </section>
+        <section id="contenido-javascript">
+          <h2>Cursos y manuales de JavaScript</h2>
+          <div class="contenido-seccion javascript">
+            <!-- Aquí se incluirán los cursos y manuales de JavaScript disponibles -->
+          </div>
+        </section>
+      </main>
+    <aside>
+      <h2>Recursos adicionales</h2>
+      <p>Aquí se incluirán enlaces a recursos adicionales para aprender HTML, CSS y JavaScript.</p>
+    </aside>
+    <footer>
+      <p>&copy; 2023 Aprende HTML, CSS y JavaScript</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

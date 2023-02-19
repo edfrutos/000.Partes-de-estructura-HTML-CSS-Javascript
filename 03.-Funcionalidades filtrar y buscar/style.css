@@ -1,0 +1,157 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  body {
+    width: auto;
+    height: auto;
+  }
+}
+
+  
+  header {
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  header svg {
+    width: 30px;
+    height: 30px;
+    fill: #333;
+    margin-right: 10px;
+  }
+  
+  header h1 {
+    font-size: 22px;
+    margin: 0;
+  }
+  
+  .courses-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .course-card {
+    width: calc(33.33% - 10px);
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .course-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .course-card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #777;
+  }
+  
+  .code-snippet {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .code-snippet .header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .code-snippet .header h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .code-snippet .header .copy-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+  }
+  
+  .code-snippet pre {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    /* Estilos para pantallas de tamaño máximo de 600px */
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width: 1024px) {
+    /* Estilos para pantallas con tamaño mínimo de 600px y máximo de 1024px */
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    /* Estilos para pantallas con tamaño mínimo de 1024px */
+  }
+  
+  .main-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .blue-section {
+    background-color: #add8e6;
+    color: #333;
+  }
+  
+  .code-window {
+    max-width: 80%;
+    max-height: 500px;
+    overflow: auto;
+    margin: 50px auto;
+  }
+
+  .container {
+    text-align: center;
+  }
+  
+  .code-window {
+    position: relative;
+    max-width: 80%;
+    max-height: 500px;
+    overflow: auto;
+    margin: 50px auto;
+  }
+  
+  .header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .header svg {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  

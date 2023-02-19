@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS, JavaScript Page Structure</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/themes/prism.min.css" >
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/prism.min.js"></script>
+
+</head>
+<body>
+    <header>
+      <h1>Aprende HTML, CSS y JavaScript</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#html">Lenguaje HTML</a></li>
+        <li><a href="#css">Lenguaje CSS</a></li>
+        <li><a href="#javascript">Lenguaje JavaScript</a></li>
+      </ul>
+    </nav>
+    <main>
+        <section id="filtro-seccion">
+          <h2>Filtrar por:</h2>
+          <select id="filtro">
+            <option value="todos">Todos</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+          </select>
+          <button type="button" id="boton-filtro">Filtrar</button>
+        </section>
+        <section id="busqueda-seccion">
+          <h2>Buscar:</h2>
+          <form id="form-busqueda">
+            <input type="text" id="busqueda" placeholder="Ingresar término a buscar">
+            <button type="submit">Buscar</button>
+          </form>
+        </section>
+        <section id="contenido-html">
+          <h2>Aprendiendo lenguaje HTML</h2>
+          <div class="contenido-html">
+            <!-- Aquí se incluirán los cursos y manuales de HTML disponibles -->
+            <p>Fragmento de código</p>
+            <div class="code-header">
+              <svg class="code-header__icon">
+                <!-- Código SVG aquí -->
+              </svg>
+              <button type="button" class="code-header__button">Copiar código</button>
+            </div>
+            <pre>
+              <code class="language-html">
+                <script>
+                  // Código sin formato aquí
+                   <html></html>
+                </script>
+              </code>
+            </pre>
+            </div>
+        </section>
+        <section id="contenido-css">
+          <h2>Aprendiendo lenguaje CSS</h2>
+          <div class="contenido-seccion css">
+            <!-- Aquí se incluirán los cursos y manuales de CSS disponibles -->
+          </div>
+        </section>
+        <section id="contenido-javascript">
+          <h2>Aprendiendo lenguaje JavaScript</h2>
+          <div class="contenido-seccion javascript">
+            <!-- Aquí se incluirán los cursos y manuales de JavaScript disponibles -->
+          </div>
+        </section>
+      </main>
+    <aside>
+      <h2>Recursos adicionales</h2>
+      <p>Aquí se incluirán enlaces a recursos adicionales para aprender HTML, CSS y JavaScript.</p>
+    </aside>
+    <footer>
+      <p>&copy; 2023 EDF Academia - Aprende HTML, CSS y JavaScript</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+@keyframes btn-animation {
+    16.667%,
+    100% {
+    border-image: linear-gradient ( 
+        to right, #1c5ae0, #1CB5E0)
+    1;
+    box-shadow: 20px 0px 60px 5px
+    #1c5ae0c2;
+    }
+    50% {
+    border-image: linear-gradient ( to right, #5106ff, #ff2819)
+    1;
+    box-shadow: 20px Opx 60px 5px
+    #ff281991;
+    }
+    83.333% {
+    border-image: linear-gradient ( to right, #d53369, #daae51)
+    1;
+    box-shadow: 20px 0px 60px 5px
+    #daaf518e;
+    }
+}
+
+button {
+    margin-top: 2rem; 
+    width: 14rem;
+    padding: 0.8em; 
+    font-size: larger; 
+    font-weight: bold;
+    color: white; 
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient (
+    to right, #1c5ae0, #1c5ae0) 1;
+    box-shadow: 20px 0px 60px 5px
+    #1c5ae0c2;
+    background-color: black;
+    animation: btn-animation 8s
+    infinite;
+    }
+    svg {
+        margin-right: 5px;
+    }
+

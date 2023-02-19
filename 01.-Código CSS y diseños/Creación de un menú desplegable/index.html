@@ -1,0 +1,79 @@
+<style>
+    /* Estilos para el contenedor del menú */
+    .menu {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 20px 0;
+    }
+    
+    /* Estilos para los enlaces del menú */
+    .menu a {
+      color: #fff;
+      display: block;
+      margin: 0 20px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    
+    /* Estilos para el estado :hover de los enlaces del menú */
+    .menu a:hover {
+      background-color: #fff;
+      color: #333;
+      padding: 10px 20px;
+    }
+    
+    /* Estilos para el contenedor del menú desplegable */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Estilos para el contenido del menú desplegable */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+    background-color: #333;
+    color: #fff;
+    min-width: 160px;
+    box-shadow: 2px 2px 10px #ccc;
+    z-index: 1;
+  }
+  
+  /* Estilos para mostrar el menú desplegable */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+</style>
+
+<!-- Menú -->
+<div class="menu">
+  <!-- Enlace 1 -->
+  <a href="#">Enlace 1</a>
+
+  <!-- Enlace 2 -->
+  <a href="#">Enlace 2</a>
+
+  <!-- Menú desplegable -->
+  <div class="dropdown">
+    <!-- Enlace 3 -->
+    <a href="#">Enlace 3</a>
+
+    <!-- Contenido del menú desplegable -->
+    <div class="dropdown-content">
+      <!-- Subenlace 1 -->
+      <a href="#">Subenlace 1</a>
+
+      <!-- Subenlace 2 -->
+      <a href="#">Subenlace 2</a>
+
+      <!-- Subenlace 3 -->
+      <a href="#">Subenlace 3</a>
+    </div>
+  </div>
+
+  <!-- Enlace 4 -->
+  <a href="#">Enlace 4</a>
+</div>
