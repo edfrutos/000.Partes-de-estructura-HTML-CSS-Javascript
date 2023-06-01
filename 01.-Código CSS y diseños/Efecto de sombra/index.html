@@ -1,0 +1,37 @@
+<style>
+    /* Estilos para el contenedor del efecto de sombra */
+    .shadow-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    /* Estilos para el elemento con el efecto de sombra */
+    .shadow-element {
+      width: 100px;
+      height: 100px;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      box-shadow: 2px 2px 10px #ccc;
+      transition: all 0.2s;
+  }
+  
+  /* Estilos para el estado :hover del elemento con el efecto de sombra */
+  .shadow-element:hover {
+    box-shadow: 10px 10px 20px #ccc;
+    transform: translateY(-10px);
+  }
+</style>
+
+<!-- Contenedor del efecto de sombra -->
+<div class="shadow-container">
+  <!-- Elemento con el efecto de sombra -->
+  <div class="shadow-element">Hola</div>
+</div>
+
+  

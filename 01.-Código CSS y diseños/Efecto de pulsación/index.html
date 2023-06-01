@@ -1,0 +1,35 @@
+<style>
+    /* Estilos para el contenedor del efecto de pulsación */
+    .pulse-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    /* Estilos para el elemento con el efecto de pulsación */
+    .pulse-element {
+      width: 100px;
+      height: 100px;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      transition: all 0.2s;
+      transform: scale(1);
+    }
+    
+    /* Estilos para el estado :active del elemento con el efecto de pulsación */
+    .pulse-element:active {
+      transform: scale(0.95);
+    }
+  </style>
+
+  <!-- Contenedor del efecto de pulsación -->
+  <div class="pulse-container">
+    <!-- Elemento con el efecto de pulsación -->
+    <div class="pulse-element">Hola</div>
+  </div>
+  

@@ -1,0 +1,42 @@
+#code-window {
+    width: 50%;
+    height: 500px;
+    background-color: #caafaf;
+    color: #333;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  #code-window {
+    background-color: #d61f1f;
+  }
+  
+  
+  #code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  #code-input {
+    width: 100%;
+    height: calc(100% - 50px);
+    padding: 20px;
+    overflow: auto;
+    text-align: left;
+    white-space: pre-wrap;
+  }
+ 
+  #copy-btn {
+    background-color: #a81414;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
